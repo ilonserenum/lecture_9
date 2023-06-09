@@ -1,0 +1,164 @@
+ul {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.action{
+    background: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 32px;
+}
+.backgroundimg .action{
+    background: white;
+    color: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+}
+
+.mainnews h1 {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.flexBox {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.greyspace {
+   background: #F3F3F3;
+   display: flex;
+}
+
+.greyspace p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.greyspace span {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.greyspace div div div{
+    display: flex;
+}
+
+.blackspace {
+   background: #000000;
+   display: flex;
+   justify-content: space-between;
+}
+
+.blackspace h2, .blackspace p {
+    color: #FFFFFF;
+}
+
+.backgroundimg {
+    background-image: url(assets/cta.svg);
+    text-align: center;
+}
+
+.backgroundimg h3 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.footerBlack {
+    background-color: #000000;
+}
+.backgroundimg div{
+    padding: 192px auto;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .flexBox{
+        display: block;
+        width: 100%;
+        padding: 32px;
+    }
+    .mainnews img{
+        width: 100%;
+    }
+    .blackspace img{
+        width: 100%;
+    }
+    .mainnews div{
+        width: 630px;
+        text-align: center;
+        margin: auto;
+    }
+    .mainnews h1{
+        text-align: center;
+    }
+    .greyspace .flexBox{
+        display: flex;
+    }
+    .blackspace h2{
+        width: 50%;
+        display: inline-block;
+        padding-right: 130px;
+    }
+    .blackspace p{
+        width: 50%;
+        display: inline-block;
+    }
+    .blackspaceContent{
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 744px) {
+    .blackspaceContent{
+        display: block;
+    }
+    .blackspace h2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .blackspace p{
+        width: 100%;
+        text-align: center;
+    }
+    .greyspace div div div{
+        display: block;
+    }
+}
